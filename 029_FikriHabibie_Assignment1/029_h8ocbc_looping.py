@@ -7,10 +7,11 @@ numbers = [
 ]
 
 for i in range(len(numbers)):
-    if(numbers[i]%2 == 0):
-        print(numbers[i])
-        if(numbers[i] == 918):
-            break
-    else:
+    if(numbers[i]%2 != 0):
         continue
+    else:
+      print(numbers[i])
+      if(numbers[i] == 918):
+        break
+        
 print('Done')
