@@ -1,4 +1,11 @@
 def convert_cel_and_kel(val, type):
+    '''
+    Mengkonversi suhu dari Celsius ke Kelvin atau Kelvin ke Celsius
+    :param val: Input angka Suhu | int or float
+    :param type: Input Jenis Suhu untuk menentukan konversi suhu dari Celsius atau Kelvin | string 
+    
+    :return Suhu dalam Celsius atau Kelvin
+    '''
     if(type == 'c'):
         res = val + 273.15
     else:
@@ -6,6 +13,13 @@ def convert_cel_and_kel(val, type):
     return round(res, 3)
 
 def convert_to_fahr(val, type):
+    '''
+    Mengkonversi suhu dari Celsius ke Fahrenheit atau Kelvin ke Fahrenheit
+    :param val: Input angka Suhu | int or float
+    :param type: Input Jenis Suhu untuk menentukan konversi suhu dari Celsius atau Kelvin | string 
+    
+    :return Suhu dalam Fahrenheit
+    '''
     if(type == 'c'):
         cel = val * 9 / 5 + 32
         res = '\nCelsius: {} to Fahrenheit: {}'.format(val, round(cel, 3))
@@ -15,6 +29,12 @@ def convert_to_fahr(val, type):
     return res
 
 def convert_from_fahr(val):
+    '''
+    Mengkonversi suhu dari Fahrenheit ke Celsius dan Kelvin sekaligus
+    :param val: Input angka Suhu | int or float
+    
+    :return Suhu dalam Celsius dan Kelvin sekaligus
+    '''
     cel = (val - 32) * 5 / 9
     kel = cel + 273.15
     return "Fahrenheit: {} to Celsius: {} & Fahrenheit: {} to Kelvin: {}".format(val, round(cel, 3), val, round(kel, 3))
