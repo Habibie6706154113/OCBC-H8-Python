@@ -1,0 +1,17 @@
+Panduan Penggunaan:
+1. jalankan program di cmd dengan perintah python 029_h8ocbc_converter
+2. pilih menu yang telah di sediakan:
+	1. melakukan konversi dari celsius ke Kelvin / kelvin ke celcius:
+		-masukkan jenis temperatur yang akan dikonversi (c = celsius, k = kelvin)
+		-masukkan angka yang akan dikonversi
+		-akan muncul output hasil konversi ke Celsius atau Kelvin
+	2. melakukan konversi dari Celsius ke Fahrenheit / Kelvin ke Fahrenheit:
+		-masukkan jenis temperatur yang akan dikonversi (c = celsius, k = kelvin)
+		-masukkan angka yang akan dikonversi
+		-akan muncul output hasil konversi ke Fahrenheit
+	3. melakukan konversi dari Fahrenheit ke celsius dan kelvin sekaligus:
+		-masukkan angka yang akan dikonversi
+		-akan muncul output hasil konversi ke Celsius dan Kelvin sekaligus
+	0. keluar dari program
+
+link github:
