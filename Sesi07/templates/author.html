@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="{{ url_for('template') }}">Home page</a>
+
+    <h1> List of Author ID </h1>
+    <ul>
+        {% for author_id in author_book.keys() %}
+            <li> <a href="{{ url_for('books', author_id = author_id) }}"> {{author_id}} </a> </li>
+        {% endfor %}
+    </ul>
+
+
+    <form action="/author" method="POST">
+        <h3>Add Author</h3>
+        <p>
+          <label for="author_id">Author id:</label>
+          <input type="text" name="author_id"/>
+        </p>
+        
+        <p><input type="submit" name="submit_recipe"/></p>
+      </form>
+    </form>
+</body>
+</html>
